@@ -78,12 +78,18 @@ export class Header extends React.Component {
                 aria-label="menu"
                 onClick={this.toggleDrawer}
                 className="cross-icon"
-              >
+              >                              
                 <CloseIcon />
               </IconButton>
               <NavMenu />
             </div>
           </Drawer>
+        </div>
+        <div className="d-none d-lg-block">
+          <div id="main-menu">
+            <img src={wookieLogo} className="main-logo" alt="" />
+            <NavMenu />
+          </div>
         </div>
       </div>
     );

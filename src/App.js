@@ -19,11 +19,16 @@ function App() {
     <div className="App">
       <ThemeProvider theme={theme}>
         <Header></Header>
-        <header className="App-header">
-          <div className="mx-2">
-            <h2>Test</h2>
+        <div className="col-md-12">
+          <div className="row">
+            <div className="col-lg-2"></div>
+            <div className="col-lg-10">
+              <div className="mx-2">
+                <h2>Test</h2>
+              </div>
+            </div>
           </div>
-        </header>
+        </div>
       </ThemeProvider>
     </div>
   );

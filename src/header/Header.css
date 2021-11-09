@@ -50,3 +50,23 @@
 .cross-icon{
   float: right;
 }
+
+#main-menu{
+  position: fixed;
+  margin-left: 9px;
+  z-index: 2;
+  top: 12%;
+  width: 225px;
+  overflow: hidden;
+}
+
+#main-menu .main-logo{
+  max-height: 150px;
+  margin-bottom: 1em;
+}
+
+@media (min-width: 996px) {
+  #nav-menu li{
+    margin: 6px;
+  }
+}

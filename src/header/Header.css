@@ -1,4 +1,52 @@
-#header.main-header .main-logo{
+#header .main-header-wrapper{
+  text-align: center;
+}
+
+#header .main-logo{
   max-height: 100px;
   margin-top: 10px;
+}
+
+#header .hamburger-wrapper{
+  position: absolute;
+  margin-left: 1em;
+}
+
+#header .hamburger-icon{
+  /* border: 1px solid black; */
+  border-radius: 15px;
+}
+
+#header .main-logo-wrapper{
+  margin: auto;
+}
+
+/* NavMenu Start */
+#nav-menu{
+  text-transform: uppercase;
+  padding: 15px;  /* TODO: media, text size depends on viewport */
+  min-width: 225px;
+}
+
+#nav-menu ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+#nav-menu li{
+  margin-bottom: 15px;
+}
+
+#nav-menu li a{
+  text-decoration: none;
+  color: #333;
+}
+
+#nav-menu li a:hover{
+  text-decoration: underline;
+  color: #333;
+}
+
+.cross-icon{
+  float: right;
 }

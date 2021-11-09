@@ -3,17 +3,33 @@ import wookieLogo from "../images/wookieLogo.jpg";
 import "./Header.css";
 
 import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Drawer from "@mui/material/Drawer";
 
 import MenuIcon from "@mui/icons-material/Menu";
 
+import CloseIcon from "@mui/icons-material/Close";
+
 class NavMenu extends React.Component {
   render() {
     return (
-      <div>TEST</div>
+      <div id="nav-menu">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/">Our Story</a>
+          </li>
+          <li>
+            <a href="/">Wookie Products</a>
+          </li>
+          <li>
+            <a href="/">FAQ And Help</a>
+          </li>
+        </ul>
+      </div>
     );
   }
 }
@@ -28,21 +44,23 @@ export class Header extends React.Component {
 
   render() {
     return (
-      <div id="header" className="container-fluid p-0 main-header">
-        <Box sx={{ flexGrow: 1 }}>
+      <div id="header" className="container-fluid p-0 main-header-wrapper">
+        <div className="d-lg-none">
           <AppBar position="static">
             <Toolbar>
-              <IconButton
-                size="large"
-                edge="start"
-                color="inherit"
-                aria-label="menu"
-                sx={{ mr: 2 }}
-                onClick={this.toggleDrawer}
-              >
-                <MenuIcon />
-              </IconButton>
-              <div>
+              <div className="hamburger-wrapper">
+                <IconButton
+                  size="large"
+                  edge="start"
+                  color="inherit"
+                  aria-label="menu"
+                  onClick={this.toggleDrawer}
+                  className="hamburger-icon"
+                >
+                  <MenuIcon />
+                </IconButton>
+              </div>
+              <div className="main-logo-wrapper">
                 <img src={wookieLogo} className="main-logo" alt="" />
               </div>
             </Toolbar>
@@ -53,9 +71,20 @@ export class Header extends React.Component {
             open={this.state.open}
             onClose={this.toggleDrawer}
           >
-            <NavMenu />
+            <div>
+              <IconButton
+                size="large"
+                color="inherit"
+                aria-label="menu"
+                onClick={this.toggleDrawer}
+                className="cross-icon"
+              >
+                <CloseIcon />
+              </IconButton>
+              <NavMenu />
+            </div>
           </Drawer>
-        </Box>
+        </div>
       </div>
     );
   }

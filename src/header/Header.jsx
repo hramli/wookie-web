@@ -101,13 +101,15 @@ export class Header extends React.Component {
         <div id="desktop-header" className="d-none d-lg-block">
           <div className="desktop-logo-wrapper">
             <MainLogo />
-            <span className="desktop-right-logo-wrapper">
-              <InstagramIcon />
-              <span className="desktop-right-logo-text">{instagramAccount}</span>
-            </span>
-            <span className="desktop-right-logo-wrapper">
-              <WhatsAppIcon />
-              <span className="desktop-right-logo-text">{phoneNumber}</span>
+            <span className="desktop-right-logo-outer-wrapper">
+              <span className="desktop-right-logo-inner-wrapper">
+                <InstagramIcon />
+                <span className="desktop-right-logo-text">{instagramAccount}</span>
+              </span>
+              <span className="desktop-right-logo-inner-wrapper">
+                <WhatsAppIcon />
+                <span className="desktop-right-logo-text">{phoneNumber}</span>
+              </span>
             </span>
           </div>
           <div id="main-menu">

@@ -33,17 +33,20 @@
   max-height: 130px;
 }
 
-#desktop-header .desktop-right-logo-wrapper{
-  /* padding: 10px 20px;
+#desktop-header .desktop-right-logo-outer-wrapper{
+  padding: 10px 20px;
   position: absolute;
   right: .5em;
   top: 50%;
-  transform: translate(0,-50%); */
-  float: right;
+  transform: translate(0,-50%);
+}
+
+#desktop-header .desktop-right-logo-inner-wrapper{
+  margin-left: 10px;
 }
 
 #desktop-header .desktop-right-logo-text{
-  margin-left: 3px;
+  margin-left: 5px;
 }
 
 /* NavMenu Start */

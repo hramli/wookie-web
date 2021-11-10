@@ -1,5 +1,7 @@
 import './App.css';
 import { Header } from './header/Header'
+import { Cakes } from './cakes/Cakes';
+
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const theme = createTheme({
@@ -24,7 +26,7 @@ function App() {
             <div className="col-lg-2"></div>
             <div className="col-lg-10">
               <div className="mx-2">
-                <h2>Test</h2>
+                <Cakes />
               </div>
             </div>
           </div>

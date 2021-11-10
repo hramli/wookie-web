@@ -5,6 +5,7 @@
 #header .main-logo{
   max-height: 100px;
   margin-top: 10px;
+  margin-left: 10px;
 }
 
 #header .hamburger-wrapper{
@@ -19,6 +20,30 @@
 
 #header .main-logo-wrapper{
   margin: auto;
+}
+
+#desktop-header .desktop-logo-wrapper{
+  padding: 10px 20px;
+  position: relative;
+}
+
+#desktop-header .desktop-logo-wrapper .main-logo{
+  margin: 0;
+  padding: 0;
+  max-height: 130px;
+}
+
+#desktop-header .desktop-right-logo-wrapper{
+  /* padding: 10px 20px;
+  position: absolute;
+  right: .5em;
+  top: 50%;
+  transform: translate(0,-50%); */
+  float: right;
+}
+
+#desktop-header .desktop-right-logo-text{
+  margin-left: 3px;
 }
 
 /* NavMenu Start */
@@ -55,7 +80,7 @@
   position: fixed;
   margin-left: 9px;
   z-index: 2;
-  top: 12%;
+  top: 25%;
   width: 225px;
   overflow: hidden;
 }

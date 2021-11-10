@@ -1,0 +1,22 @@
+.cake-card:hover {
+  cursor: pointer;
+}
+
+.cake-card:nth-child(3n+1) {
+  clear: left;
+  position: relative;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.cake-card-img {
+  max-width: 100%;
+}
+
+.cake-card-title {
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 600;
+}

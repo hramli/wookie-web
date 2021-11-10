@@ -8,8 +8,21 @@ import IconButton from "@mui/material/IconButton";
 import Drawer from "@mui/material/Drawer";
 
 import MenuIcon from "@mui/icons-material/Menu";
+import InstagramIcon from '@mui/icons-material/Instagram';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 import CloseIcon from "@mui/icons-material/Close";
+
+const instagramAccount = "@TheWookieBakery"
+const phoneNumber = "+65 945 945 45"
+
+function MainLogo() {
+  return (
+    <a href="/">
+      <img src={wookieLogo} className="main-logo" alt="" />
+    </a>
+  )
+}
 
 class NavMenu extends React.Component {
   render() {
@@ -61,7 +74,7 @@ export class Header extends React.Component {
                 </IconButton>
               </div>
               <div className="main-logo-wrapper">
-                <img src={wookieLogo} className="main-logo" alt="" />
+                <MainLogo />
               </div>
             </Toolbar>
           </AppBar>
@@ -85,9 +98,19 @@ export class Header extends React.Component {
             </div>
           </Drawer>
         </div>
-        <div className="d-none d-lg-block">
+        <div id="desktop-header" className="d-none d-lg-block">
+          <div className="desktop-logo-wrapper">
+            <MainLogo />
+            <span className="desktop-right-logo-wrapper">
+              <InstagramIcon />
+              <span className="desktop-right-logo-text">{instagramAccount}</span>
+            </span>
+            <span className="desktop-right-logo-wrapper">
+              <WhatsAppIcon />
+              <span className="desktop-right-logo-text">{phoneNumber}</span>
+            </span>
+          </div>
           <div id="main-menu">
-            <img src={wookieLogo} className="main-logo" alt="" />
             <NavMenu />
           </div>
         </div>

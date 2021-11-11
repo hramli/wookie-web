@@ -1,5 +1,4 @@
 import React from "react";
-import wookieLogo from "../images/wookieLogo.jpg";
 import "./Header.css";
 
 import AppBar from "@mui/material/AppBar";
@@ -8,18 +7,19 @@ import IconButton from "@mui/material/IconButton";
 import Drawer from "@mui/material/Drawer";
 
 import MenuIcon from "@mui/icons-material/Menu";
+
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 import CloseIcon from "@mui/icons-material/Close";
 
-const instagramAccount = "@TheWookieBakery"
-const phoneNumber = "+65 945 945 45"
+const WOOKIE_INSTAGRAM_ACCOUNT = "@TheWookieBakery"
+const WOOKIE_PHONE_NUMBER = "+65 945 945 45"
 
 function MainLogo() {
   return (
     <a href="/">
-      <img src={wookieLogo} className="main-logo" alt="" />
+      <img src={`${process.env.PUBLIC_URL}/images/wookieLogo.jpg`} className="main-logo" alt="" />
     </a>
   )
 }
@@ -104,11 +104,11 @@ export class Header extends React.Component {
             <span className="desktop-right-logo-outer-wrapper">
               <span className="desktop-right-logo-inner-wrapper">
                 <InstagramIcon />
-                <span className="desktop-right-logo-text">{instagramAccount}</span>
+                <span className="desktop-right-logo-text">{WOOKIE_INSTAGRAM_ACCOUNT}</span>
               </span>
               <span className="desktop-right-logo-inner-wrapper">
                 <WhatsAppIcon />
-                <span className="desktop-right-logo-text">{phoneNumber}</span>
+                <span className="desktop-right-logo-text">{WOOKIE_PHONE_NUMBER}</span>
               </span>
             </span>
           </div>

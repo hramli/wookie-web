@@ -1,22 +1,49 @@
-.cake-card:hover {
-  cursor: pointer;
+.cake-card {
+  text-align: center;
 }
 
 .cake-card:nth-child(3n+1) {
   clear: left;
   position: relative;
   margin-bottom: 30px;
-  text-align: center;
+}
+
+.cake-card-img-wrapper {
+  background: rgba(0,0,0,1);
 }
 
 .cake-card-img {
   max-width: 100%;
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+}
+
+.cake-card-img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity .3s ease-in-out;
+}
+
+.cake-card-title:hover {
+  cursor: pointer;
 }
 
 .cake-card-title {
+  display: inline-block;
   margin-top: 10px;
   margin-bottom: 0;
   color: #333;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+/* Cake Info Dialog */
+
+.cake-info-dialog-wrapper {
+  /* width: 80%; */
+}
+
+.cake-info-dialog-img {
+  max-height: 300px;
+  max-width: 100%;
 }

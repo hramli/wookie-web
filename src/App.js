@@ -13,7 +13,7 @@ const theme = createTheme({
       main: '#000',
     },
   },
-  shadows: ["none"]
+  shadows: Array(25).fill('none')
 });
 
 function App() {

@@ -1,0 +1,32 @@
+.cake-title {
+  font-weight: 650;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.cake-price p{
+  margin: 0;
+  font-size: 14px;
+}
+
+.cake-page-wrapper {
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.cake-page-wrapper p {
+  margin-bottom: 10px;
+}
+
+.cake-page-img {
+  max-width: 100%;
+  max-height: 500px;
+}
+
+.cake-page-description-wrapper ul{
+  padding-left: 13px;
+}
+
+.cake-page-description {
+  margin: 10px 0;
+}

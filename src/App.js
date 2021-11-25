@@ -1,6 +1,8 @@
 import './App.css';
 import { Header } from './header/Header'
 import { Cakes } from './cakes/Cakes';
+import { CakePage } from './cake/CakePage';
+import { Routes, Route, Link } from "react-router-dom";
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
@@ -26,7 +28,11 @@ function App() {
             <div className="col-lg-2"></div>
             <div className="col-lg-10">
               <div className="mx-2">
-                <Cakes />
+                <Routes>
+                  <Route path="/" element={<Cakes />} />
+                  <Route path="/cake/:cakeId" element={<CakePage />} /> 
+                  <Route path="test" element={<div>TEST</div>} />
+                </Routes>
               </div>
             </div>
           </div>

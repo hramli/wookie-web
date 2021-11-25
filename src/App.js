@@ -2,6 +2,7 @@ import './App.css';
 import { Header } from './header/Header'
 import { Cakes } from './cakes/Cakes';
 import { CakePage } from './cake/CakePage';
+import { Faq } from './faq/Faq';
 import { Routes, Route, Link } from "react-router-dom";
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -31,7 +32,7 @@ function App() {
                 <Routes>
                   <Route path="/" element={<Cakes />} />
                   <Route path="/cake/:cakeId" element={<CakePage />} /> 
-                  <Route path="test" element={<div>TEST</div>} />
+                  <Route path="/help" element={<Faq />} />
                 </Routes>
               </div>
             </div>

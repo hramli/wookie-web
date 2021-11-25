@@ -39,7 +39,7 @@ class NavMenu extends React.Component {
             <a href="/">Wookie Products</a>
           </li>
           <li>
-            <a href="/">FAQ And Help</a>
+            <a href="/help">FAQ And Help</a>
           </li>
         </ul>
       </div>

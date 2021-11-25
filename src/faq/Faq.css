@@ -1,0 +1,26 @@
+.faq-sub-section {
+  margin: 30px 0;
+}
+
+.faq-sub-section-title {
+  font-size: 18px;
+}
+
+.faq-sub-section-contents {
+  padding-left: 10px;
+}
+
+.faq-qna-wrapper {
+  margin: 20px 0;
+}
+
+.faq-question {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 6px;
+}
+
+.faq-answer {
+  margin: 8px 0;
+}

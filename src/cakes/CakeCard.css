@@ -36,15 +36,3 @@
   text-transform: uppercase;
   font-weight: 600;
 }
-
-/* Cake Info Dialog */
-
-.cake-info-dialog-wrapper {
-  /* width: 80%; */
-  margin: auto;
-}
-
-.cake-info-dialog-img {
-  max-height: 300px;
-  max-width: 100%;
-}

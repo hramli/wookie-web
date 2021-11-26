@@ -1,16 +1,13 @@
 import React from "react";
 import "./Header.css";
-
+import { Link } from 'react-router-dom';
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Drawer from "@mui/material/Drawer";
-
 import MenuIcon from "@mui/icons-material/Menu";
-
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-
 import CloseIcon from "@mui/icons-material/Close";
 
 const WOOKIE_INSTAGRAM_ACCOUNT = "@TheWookieBakery"
@@ -18,28 +15,49 @@ const WOOKIE_PHONE_NUMBER = "+65 945 945 45"
 
 function MainLogo() {
   return (
-    <a href="/">
+    <Link to="/">
       <img src={`${process.env.PUBLIC_URL}/images/wookieLogo.jpg`} className="main-logo" alt="" />
-    </a>
+    </Link>
   )
 }
 
 class NavMenu extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { wookieProductMenuOpen: false };
+  }
+
+  toggleWookieProductMenu = () => this.setState({
+    wookieProductMenuOpen: !this.state.wookieProductMenuOpen
+  })
+
   render() {
     return (
       <div id="nav-menu">
         <ul>
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/">Our Story</a>
+            <Link to="/">Our Story</Link>
           </li>
           <li>
-            <a href="/">Wookie Products</a>
+            <span className="sub-menu-header" onClick={this.toggleWookieProductMenu}>Wookie Products</span>
+            {this.state.wookieProductMenuOpen && 
+              (<ul>
+                <li>
+                  <Link to="/cakes">Cakes</Link>
+                </li>
+                <li>
+                  <Link to="/cookies">Wookie Cookies</Link>
+                </li>
+                <li>
+                  <Link to="/burgers">Wookie Burgers</Link>
+                </li>
+              </ul>)}
           </li>
           <li>
-            <a href="/help">FAQ And Help</a>
+            <Link to="/help">FAQ And Help</Link>
           </li>
         </ul>
       </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './CakeCard.css'
 
 export class CakeCard extends React.Component {
   constructor(props) {

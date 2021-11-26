@@ -74,6 +74,15 @@
   color: #333;
 }
 
+#nav-menu .sub-menu-header{
+  cursor: pointer;
+}
+
+#nav-menu .sub-menu-header:hover{
+  text-decoration: underline;
+  color: #333;
+}
+
 .cross-icon{
   float: right;
 }

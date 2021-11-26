@@ -1,13 +1,31 @@
 import React from 'react'
 import { CakeCard } from './CakeCard';
-import { WookieCakes } from '../shared/constants';
-import './CakeCard.css'
+import { CakeType, getCakesByCakeType } from '../shared/constants';
+import './Cakes.css'
 
 export function Cakes() {
-  let cakeCards = []
+  let regularCakes = getCakesByCakeType(CakeType.REGULAR);
+  let regularCakeCards = [];
+  let premiumCakes = getCakesByCakeType(CakeType.PREMIUM);
+  let premiumCakeCards = [];
   let id = 0
-  for(const cake of WookieCakes){
-    cakeCards.push(
+
+  for(const cake of regularCakes){
+    regularCakeCards.push(
+      <CakeCard 
+        price={cake.price}
+        name={cake.name}
+        image={cake.imageFileName}
+        cakeId={cake.id}
+        description={cake.description}
+        key={id}
+      />
+    )
+    id++
+  }
+
+  for(const cake of premiumCakes){
+    premiumCakeCards.push(
       <CakeCard 
         price={cake.price}
         name={cake.name}
@@ -22,11 +40,18 @@ export function Cakes() {
 
   return (
     <div>
-      <div className="col-lg-6">
-        <h1 className="section-title">Normal Cakes</h1>
+      <div className="col-lg-6 cake-section-wrapper">
+        <h1 className="section-title">Regular Cakes</h1>
       </div>
       <div>
-        {cakeCards}
+        {regularCakeCards}
+      </div>
+
+      <div className="col-lg-6 cake-section-wrapper">
+        <h1 className="section-title">Premium Cakes</h1>
+      </div>
+      <div>
+        {premiumCakeCards}
       </div>
     </div>
   )

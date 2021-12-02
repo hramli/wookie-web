@@ -1,0 +1,13 @@
+/* #burgers-component .carousel-img {
+  max-width: 100%;
+  max-height: 500px;
+}
+
+#burgers-component .page-img {
+  max-width: 100%;
+  max-height: 500px;
+} */
+
+#burgers-component img {
+  max-width: 750px;
+}

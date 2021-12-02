@@ -2,7 +2,6 @@ body {
   margin: 0;
   font-size: 12px;
   color: #333;
-  overflow-x: hidden;
 }
 
 .section-title {
@@ -24,6 +23,11 @@ hr {
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 @media (min-width: 992px) {

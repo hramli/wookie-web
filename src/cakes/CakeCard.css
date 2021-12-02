@@ -36,3 +36,8 @@
   text-transform: uppercase;
   font-weight: 600;
 }
+
+.cake-card-price {
+  font-style: italic;
+  color: #484848;
+}

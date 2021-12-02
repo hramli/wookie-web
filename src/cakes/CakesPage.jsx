@@ -1,11 +1,11 @@
 import React from 'react'
 import { Layout } from '../layout/Layout'
-import { Cake } from './Cake'
+import { Cakes } from './Cakes'
 
-export function CakePage() {
+export function CakesPage() {
   return (
     <Layout
-      component={<Cake />}>
+      component={<Cakes />}>
     </Layout>
   )
 }

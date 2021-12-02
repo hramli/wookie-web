@@ -42,20 +42,23 @@ class NavMenu extends React.Component {
             <Link to="/">Our Story</Link>
           </li>
           <li>
-            <span className="sub-menu-header" onClick={this.toggleWookieProductMenu}>Wookie Products</span>
-            {this.state.wookieProductMenuOpen && 
-              (<ul>
-                <li>
-                  <Link to="/cakes">Cakes</Link>
-                </li>
-                <li>
-                  <Link to="/cookies">Wookie Cookies</Link>
-                </li>
-                <li>
-                  <Link to="/burgers">Wookie Burgers</Link>
-                </li>
-              </ul>)}
+            <span className="sub-menu-header" onClick={this.toggleWookieProductMenu}>
+              Wookie Products
+              <b className="caret"></b>
+            </span>
           </li>
+          {this.state.wookieProductMenuOpen &&
+            (<ul className="sub-menu">
+              <li>
+                <Link to="/cakes">Cakes</Link>
+              </li>
+              <li>
+                <Link to="/cookies">Wookie Cookies</Link>
+              </li>
+              <li>
+                <Link to="/burgers">Wookie Burgers</Link>
+              </li>
+            </ul>)}
           <li>
             <Link to="/help">FAQ And Help</Link>
           </li>
@@ -67,8 +70,13 @@ class NavMenu extends React.Component {
 
 export class Header extends React.Component {
   constructor(props) {
+    // console.log(props)
     super(props);
     this.state = { open: false };
+    this.showNavMenu = this.props.showNavMenu;
+
+    if (this.showNavMenu == null)
+      this.showNavMenu = true;
   }
 
   toggleDrawer = () => this.setState({ open: !this.state.open });
@@ -109,7 +117,7 @@ export class Header extends React.Component {
                 aria-label="menu"
                 onClick={this.toggleDrawer}
                 className="cross-icon"
-              >                              
+              >
                 <CloseIcon />
               </IconButton>
               <NavMenu />
@@ -130,9 +138,11 @@ export class Header extends React.Component {
               </span>
             </span>
           </div>
-          <div id="main-menu">
-            <NavMenu />
-          </div>
+          {this.showNavMenu &&
+            <div id="main-menu">
+              <NavMenu />
+            </div>
+          }
         </div>
       </div>
     );

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Header } from '../header/Header'
 
+//TODO: Refactor using wrapper component
 export function Layout(props) {
   let showNavMenu = props.showNavMenu;
   if (showNavMenu == null || showNavMenu == undefined) {
@@ -10,7 +11,7 @@ export function Layout(props) {
   return (
     <>
       <Header showNavMenu={props.showNavMenu}></Header>
-      <div className="col-md-12">
+      <div className="pt-3">
         <div className="row">
           {showNavMenu &&
             <>

@@ -10,7 +10,7 @@ export class CakeCard extends React.Component {
   render() {
     return (
       <>
-        <div className="cake-card col-lg-4">
+        <div className="cake-card col-md-6 col-lg-4">
           <Link to={`/cake/${this.props.cakeId}`}>
             <div className="cake-card-img-wrapper">
               <img src={`${process.env.PUBLIC_URL}/images/cakes/${this.props.image}`} alt="" className="cake-card-img"/>

@@ -28,10 +28,10 @@ export function Cake() {
 
   return (
     <div className="cake-page-wrapper row">
-      <div className="col-md-5">
+      <div className="col-md-5 cake-img-wrapper">
         <img src={`${process.env.PUBLIC_URL}/images/cakes/${cake.imageFileName}`} alt="" className="cake-page-img"/>
       </div>
-      <div className="col-md-7">
+      <div className="col-md-7 cake-description-wrapper">
         <h3 className="cake-title">{cake.name}</h3>
         <hr />
         <div className="cake-price">
@@ -40,12 +40,7 @@ export function Cake() {
         </div>
         <hr />
         <div className="cake-page-description-wrapper">
-          {/* <ul> */}
-            {description}
-          {/* </ul> */}
-          {/* <hr /> */}
-          {/* <p>Made up of 3 thick layers of soft sponge using only the very best ingredients.</p>
-          <p>Each cake comes with a big birthday tag, candle, knife and a wishing card. Please let us know your personalised message to be written on the card.</p> */}
+          {description}
           <hr />
           <CakeDeliveryInfo />
         </div>

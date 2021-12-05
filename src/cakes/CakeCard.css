@@ -2,12 +2,6 @@
   text-align: center;
 }
 
-.cake-card:nth-child(3n+1) {
-  clear: left;
-  position: relative;
-  margin-bottom: 30px;
-}
-
 .cake-card-img-wrapper {
   background: rgba(0,0,0,1);
 }
@@ -40,4 +34,20 @@
 .cake-card-price {
   font-style: italic;
   color: #484848;
+}
+
+@media (min-width: 992px) {
+  .cake-card:nth-child(3n+1) {
+    clear: left;
+    position: relative;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .cake-card:nth-child(2n+1) {
+    clear: left;
+    position: relative;
+    margin-bottom: 30px;
+  }
 }

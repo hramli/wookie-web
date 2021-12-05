@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/wookie-web/static/css/main.2689b4d9.chunk.css",
-    "main.js": "/wookie-web/static/js/main.8606a6f3.chunk.js",
-    "main.js.map": "/wookie-web/static/js/main.8606a6f3.chunk.js.map",
+    "main.js": "/wookie-web/static/js/main.ba13ee68.chunk.js",
+    "main.js.map": "/wookie-web/static/js/main.ba13ee68.chunk.js.map",
     "runtime-main.js": "/wookie-web/static/js/runtime-main.cfb7aef8.js",
     "runtime-main.js.map": "/wookie-web/static/js/runtime-main.cfb7aef8.js.map",
-    "static/js/2.9e8b34c8.chunk.js": "/wookie-web/static/js/2.9e8b34c8.chunk.js",
-    "static/js/2.9e8b34c8.chunk.js.map": "/wookie-web/static/js/2.9e8b34c8.chunk.js.map",
+    "static/js/2.8601e8c9.chunk.js": "/wookie-web/static/js/2.8601e8c9.chunk.js",
+    "static/js/2.8601e8c9.chunk.js.map": "/wookie-web/static/js/2.8601e8c9.chunk.js.map",
     "static/js/3.7ed4f5c0.chunk.js": "/wookie-web/static/js/3.7ed4f5c0.chunk.js",
     "static/js/3.7ed4f5c0.chunk.js.map": "/wookie-web/static/js/3.7ed4f5c0.chunk.js.map",
     "index.html": "/wookie-web/index.html",
     "static/css/main.2689b4d9.chunk.css.map": "/wookie-web/static/css/main.2689b4d9.chunk.css.map",
-    "static/js/2.9e8b34c8.chunk.js.LICENSE.txt": "/wookie-web/static/js/2.9e8b34c8.chunk.js.LICENSE.txt"
+    "static/js/2.8601e8c9.chunk.js.LICENSE.txt": "/wookie-web/static/js/2.8601e8c9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.cfb7aef8.js",
-    "static/js/2.9e8b34c8.chunk.js",
+    "static/js/2.8601e8c9.chunk.js",
     "static/css/main.2689b4d9.chunk.css",
-    "static/js/main.8606a6f3.chunk.js"
+    "static/js/main.ba13ee68.chunk.js"
   ]
 }

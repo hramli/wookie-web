@@ -2,7 +2,9 @@ import './App.css';
 import { CakesPage } from './cakes/CakesPage';
 import { CakePage } from './cake/CakePage';
 import { BurgersPage } from './burgers/BurgersPage';
+import { CookiesPage } from './cookies/CookiesPage';
 import { FaqPage } from './faq/FaqPage';
+import { StoryPage } from './story/StoryPage';
 import { NotFoundPage } from './notfound/NotFoundPage';
 import { Routes, Route } from "react-router-dom";
 import { ScrollToTop } from './ScrollToTop';
@@ -32,6 +34,8 @@ function App() {
             <Route path="/cakes" element={<CakesPage />} />
             <Route path="/cake/:cakeId" element={<CakePage />} />
             <Route path="/burgers" element={<BurgersPage />} />
+            <Route path="/cookies" element={<CookiesPage />} />
+            <Route path="/story" element={<StoryPage />} />
             <Route path="/help" element={<FaqPage />} />
             <Route path="*" element={<NotFoundPage />} />
         </Routes>

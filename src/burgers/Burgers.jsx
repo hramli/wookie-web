@@ -5,7 +5,7 @@ import './Burgers.css'
 export class Burgers extends React.Component {
   render() {
     return (
-      <div id="burgers-component">
+      <div id="burgers-component" className="col-lg-6">
         <h1 className="section-title">Wookie Burger 2.0</h1>
 
         {/* <Carousel

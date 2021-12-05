@@ -32,7 +32,7 @@ function NavMenu() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/">Our Story</Link>
+          <Link to="/story">Our Story</Link>
         </li>
         <li>
           <span className="sub-menu-header" onClick={() => setWookieProductMenuOpen(!wookieProductMenuOpen)}>
